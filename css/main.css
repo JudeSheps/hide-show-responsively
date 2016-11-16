@@ -16,15 +16,11 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
 img {
   width: 100%;
 }
 
-img:nth-child(3),
+img:nth-child(2),
 img:last-child {
   display: none;
 }
@@ -35,8 +31,8 @@ img:last-child {
     max-width: 49%;
   }
 
-img:nth-child(3),
-img:last-child {
+  img:nth-child(2),
+  img:last-child {
     display: inline-block;
   }
 
@@ -49,8 +45,7 @@ img:last-child {
     max-width: 32%;
   }
 
-
-img:last-child {
+  img:first-child {
     display: none;
   }
 
@@ -59,10 +54,10 @@ img:last-child {
 @media only screen and (min-width: 60em) {
 
   img {
-    max-width: 24%;
+    max-width: 24.5%;
   }
 
-img:last-child {
+  img:first-child {
     display: inline-block;
   }
 
