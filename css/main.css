@@ -6,6 +6,10 @@
 
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
@@ -20,19 +24,45 @@ img {
   width: 100%;
 }
 
+.third,
+.last {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    max-width: 49%;
+  }
+
+  .third,
+  .last {
+    display: inline-block;
+  }
+
+}
+
 @media only screen and (min-width: 38em) {
 
-  img  {
+  img {
     display: inline-block;
-    max-width: 49%;
+    max-width: 32%;
+  }
+
+  .last {
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  img  {
+  img {
     max-width: 24%;
+  }
+
+  .last {
+    display: inline-block;
   }
 
 }
